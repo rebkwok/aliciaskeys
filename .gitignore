@@ -1,5 +1,7 @@
 .idea/
 *.pyc
+.vagrant/
 log/
 venv/
+aliciaskeys/.env
 provision/.vaultpass
