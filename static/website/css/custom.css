@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-image: linear-gradient(to bottom, #FDC109, #FDC109 60%, #DC0B8B 90%);
+    background-image: -webkit-linear-gradient(to bottom, #FDC109, #FDC109 60%, #DC0B8B 90%);
+    background-image: -moz-linear-gradient(to bottom, #FDC109, #FDC109 60%, #DC0B8B 90%);
+}
+
+p.lead {
+    font-size: larger;
+}
+
+
+
+div.header {
+    margin-top: 50px;
+}
+
+
+div.under-contruction {
+    padding-top: 15px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+
+/*md*/
+@media (max-width: 1199px) {}
+
+/*sm*/
+@media (max-width: 991px) {
+	h1 { font-size: x-large}
+    h2 { font-size: large;}
+    p.lead {
+        font-size: medium;
+    }
+    div.header {
+        margin-top: 50px;
+    }
+}
+
+/*xs*/
+@media (max-width: 767px) {}
+
+
