@@ -46,6 +46,13 @@ div.under-contruction {
 }
 
 /*xs*/
-@media (max-width: 767px) {}
-
-
+@media (max-width: 767px) {
+	h1 { font-size: larger;}
+    h2 { font-size: medium;}
+    p.lead {
+        font-size: small;
+    }
+    div.header {
+        margin-top: 50px;
+    }
+}
