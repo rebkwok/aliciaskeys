@@ -1,0 +1,4 @@
+---
+virtualenv_path: /src/aliciaskeys/venv
+project_root_path: /src/aliciaskeys
+python3_path: /usr/bin/python3.5
