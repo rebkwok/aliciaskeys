@@ -82,7 +82,7 @@ ROOT_URLCONF = 'aliciaskeys.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -162,13 +162,16 @@ MEDIA_ROOT = root('media')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'aliciaskeys.web@gmail.com' # TODO
+# EMAIL_HOST_USER = 'aliciaskeys.web@gmail.com' # TODO
+EMAIL_HOST_USER = 'flexibeast.web@gmail.com'
+
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', None)  # TODO needs gmail app secret
 if EMAIL_HOST_PASSWORD is None:  # pragma: no cover
     print("No email host password provided!")
 EMAIL_PORT = 587
-DEFAULT_FROM_EMAIL = 'aliciaskeys.web@gmail.com'  # TODO make this
-DEFAULT_STUDIO_EMAIL = 'aliciaskeystherapies@outlook.com'
+# DEFAULT_FROM_EMAIL = 'aliciaskeys.web@gmail.com'  # TODO make this
+DEFAULT_FROM_EMAIL = 'flexibeast.web@gmail.com'
+DEFAULT_TO_EMAIL = 'aliciaskeystherapies@outlook.com'
 SUPPORT_EMAIL = 'rebkwok@gmail.com'
 
 

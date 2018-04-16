@@ -1,0 +1,168 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Alicias Keys"/>
+    <!--<meta property="og:image" content="{% static 'website/images/doublebridge.jpg' %}"/>-->
+    <meta property="og:site_name" content="Alicias Keys"/>
+    <meta property="og:url" content="https://aliciaskeys.co.uk/"/>
+    <meta property="og:description" content="Psychological & Wellness Therapies"/>
+
+
+    <title>Alicias Keys: Psychological & Wellness Therapies</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.6 user-scalable=yes"/>
+        <title>Alicia's Keys: Psychological & Wellness Therapies</title>
+
+        <link rel="shortcut icon" href="{% static 'website/images/favicon.ico' %}" type="image/vnd.microsoft.icon">
+        <link rel="icon" type="image/png" href="{% static 'website/images/icon.png' %}">
+
+        <!--&lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
+        <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        &lt;!&ndash; Bootstrap theme &ndash;&gt;-->
+       <!--&lt;!&ndash; Font awesome &ndash;&gt;-->
+        <!--<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>-->
+
+	<!-- core CSS -->
+    <link href="{% static 'website/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/font-awesome.min.css' %}"rel="stylesheet">
+    <link href="{% static 'website/css/animate.min.css' %}"rel="stylesheet">
+    <link href="{% static 'website/css/main.css' %}"rel="stylesheet">
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
+
+
+    {% block extra_head %}{% endblock %}
+    <link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">
+</head><!--/head-->
+
+<body {% block bodyclass %}{% endblock %}>
+
+    <header id="header">
+        <div class="headerbox">
+        <div class="headerbox-inner">
+        <div class="top-bar">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/flexibeast"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/FlexiBeast247"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/flexibeast/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                       </div>
+                    </div>
+            </div>
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-default" role="banner">
+            <div class="nav-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand pull-left" href="{% url 'website:home' %}">
+                        <img class='logo-unicorn' src="{% static 'website/images/site_logo.png' %}" alt="logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'website:clinics' %}">Performance Clinics</a></li>
+                        <li><a class='contact' href="{% url 'website:contact' %}"><div>Contact</div></a></li>
+                        <span class="visible-xs">
+                            <ul class="social-share pull-right">
+                            <li><a href="https://www.facebook.com/alicia.knight.7311?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/FlexiBeast247"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/flexibeast/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </span>
+                </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </div>
+    </div>
+    </header><!--/header-->
+
+    {% block messages %}
+    {% if messages %}
+          <div class="row">
+            <div class="col-sm-12">
+                {% for message in messages %}
+                <div {% if message.tags and message.tags == 'error' %}
+                            class="message alert alert-danger"
+                     {% elif message.tags %}
+                            class="message alert alert-{{ message.tags }}"
+                     {% endif %}>
+                    {% if 'safe' in message.tags %}
+                        {{ message|safe }}
+                    {% else %}
+                        {{ message }}
+                    {% endif %}</div>
+                {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+
+        <footer id="footer" class="midnight-blue">
+        <div class="footerbox">
+        <div class="footerbox-inner">
+        <div class="container">
+            <div class="row">
+
+                <div class="hidden-xs col-sm-6 footer-credit pull-left">
+                    <div>Site developed by <a href="https://twitter.com/rebkwok" target="_blank" style="color: #0B0B61">Becky Smith</a></div>
+                    <div class="footer-credit"><a href="{% url 'website:privacy_policy' %}">Data Privacy Statement</a></div>
+                </div>
+
+                <div class="hidden-xs col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="{% url 'website:home' %}">Home</a></li>
+                            <li><a href="{% url 'website:contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="visible-xs col-xs-12 footer-xs">
+                    <div>
+                        <ul>
+                            <li><a href="{% url 'website:home' %}">Home</a></li>
+                            <li><a href="{% url 'website:contact' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-credit">Site developed by <a href="https://twitter.com/rebkwok" target="_blank">Becky Smith</a></div>
+                    <div class="footer-credit"><a href="{% url 'website:privacy_policy' %}">Data Privacy Statement</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer><!--/#footer-->
+    <script src="{% static 'website/js/jquery.js' %}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'common/bootstrap/moment.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'website/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
+{#    <script src="{% static 'website/js/isotopeRowsCentered.js' %}"></script>#}
+    <script src="{% static 'website/js/wow.min.js' %}"></script>
+    <!--[if lt IE 9]>
+    <script src="{% static 'website/js/html5shiv.js"></script' %}">
+    <script src="{% static 'website/js/respond.min.js"></script' %}">
+    <![endif]-->
+
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>

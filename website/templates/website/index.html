@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+    {% block bodyclass %}class="homepage"{% endblock %}
+
+    {% block content %}
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <!--<li data-target="#main-slider" data-slide-to="1"></li>-->
+                <!--<li data-target="#main-slider" data-slide-to="2"></li>-->
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel1 item active">
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-xs-2 col-xs-offset-5">
+                                <div class="carousel-content">
+                                    <h1 class="animation animated-item-1">Psychological & Wellness Therapiess</h1>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="carousel-content-1">
+                                    <h2 class="animation animated-item-2">Clinics in Edinburgh and the borders</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-border"></div>
+                </div><!--/.item-->
+
+                <!--<div class="carousel2 item">-->
+                    <!--<div class="container">-->
+                        <!--<div class="row slide-margin">-->
+                            <!--<div class="col-sm-6 col-xs-11 col-xs-offset-1">-->
+                                <!--<div class="carousel-content">-->
+                                    <!--<h1 class="animation animated-item-1">Take the first step towards becoming a FlexiBeast</h1>-->
+                                    <!--<h2 class="animation animated-item-2">Classes in Edinburgh and the borders</h2>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="carousel-border"></div>-->
+                <!--</div>&lt;!&ndash;/.item&ndash;&gt;-->
+
+                <!--<div class="carousel3 item">-->
+                    <!--<div class="container">-->
+                        <!--<div class="row slide-margin">-->
+                            <!--<div class="col-sm-6 col-xs-11 col-xs-offset-1">-->
+                                <!--<div class="carousel-content">-->
+                                    <!--<h1 class="animation animated-item-1">Workshops, Stretch Clinics, Private Instruction</h1>-->
+                                    <!--<h2 class="animation animated-item-2">Focus on individual goals and problems</h2>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="carousel-border"></div>-->
+                <!--</div>&lt;!&ndash;/.item&ndash;&gt;-->
+               </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <!--<a class="prev hidden-xs" href="#main-slider" data-slide="prev">-->
+            <!--<i class="fa fa-chevron-left"></i>-->
+        <!--</a>-->
+        <!--<a class="next hidden-xs" href="#main-slider" data-slide="next">-->
+            <!--<i class="fa fa-chevron-right"></i>-->
+        <!--</a>-->
+    </section><!--/#main-slider-->
+
+    <section id="welcome" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Welcome</h2>
+               <p class="lead">
+                   Welcome to Alicia’s Keys, thank you for visiting. Congratulations on taking the first step
+                    towards your goals! Here on the website, you'll find information about me and what I
+                    can offer. If there's anything that's not covered, pop to the contact section and I'll get
+                    back to you. My practice is holistic linking mind and body to keep you happy and
+                    healthy. I aim to provide a safe space for you to grow and work towards your goals
+                    whatever they may be. Swing by the “Services” section for a breakdown of what we can
+                    work on together. I firmly believe that in balancing body and mind, great things can be
+                    achieved.
+               </p>
+                <p class="pull-right">Namaste, Alicia</p>
+            </div>
+
+        </div><!--/.container-->
+    </section><!--/#welcome-->
+
+    <section id="summary">
+	   <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Clinics</h2>
+                <p class="lead">At locations in Edinburgh and the borders.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="media services-wrap center wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">Heading 1</h3>
+                            <div class="feature-wrap">
+                                <div class="feature-wrap-i">
+                                <i><img class="yogaicon img-responsive" src="{% static 'website/fonts/png/yogaicon1.png' %}"/></i>
+                                </div>
+                            </div>
+                            <p>Description 1</p>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="media services-wrap center wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">Heading 2</h3>
+                            <div class="feature-wrap">
+                                <div class="feature-wrap-i">
+                                <i><img class="yogaicon img-responsive" src="{% static 'website/fonts/png/yogaicon2.png' %}"/></i>
+                                </div>
+                            </div>
+                            <p>Description</p>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="media services-wrap center wow fadeInDown">
+                        <div class="media-body">
+                            <h3 class="media-heading">Heading 3</h3>
+                            <div class="feature-wrap">
+                                <div class="feature-wrap-i">
+                                <i><img class="yogaicon img-responsive" src="{% static 'website/fonts/png/yogaicon3.png' %}"/></i>
+                                </div>
+                            </div>
+                            <p>Description</p>
+                        </div>
+                        </div>
+                </div>
+
+            </div><!--/.row-->
+
+        </div><!--/.container-->
+
+    </section><!--/#summary-->
+
+
+    <section id="about" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>About Alicia</h2>
+               <p class="lead">
+                   Alicia has always been fascinated by and passionate about the mind/body link. This led
+                    her to studies in both fields, holding qualifications in fitness and psychology. Her
+                    approach unique as takes what she has learned and applies it to her practice. Alicia
+                    started her career as a fitness instructor; seeing the impact that exercise had on mental
+                    health she did her first degree in Health Psychology. Alicia had always been interested
+                    in Yoga but never found something that worked for her so when a centre she taught in
+                    her asked her to train in and then teach it, she took the plunge and hasn’t looked back
+                    since. That was 15 years ago!!! Since then she has gained 2 further post graduate
+                    degrees in psychology. In her psychological practice, Alicia has worked across
+                    disciplines and has also worked to support professionals in their day to day work. In
+                    April 2015, Alicia developed her own approach to flexibility and mobility and began
+                    working with athletes on improving performance and preventing injury. Not one to sit on
+                    her laurels, she is constantly studying and developing new techniques. She learns from
+                    the best in the world to enhance her own training and therefore her teaching.
+                    Alicia’s goal has always been to develop a practice which links body and mind, knowing
+                    that she has the ability to support people to work through a wide range of challenges.
+                    So now, Alicia’s keys is born to provide a sanctuary, support and strategies for the best
+                    possible outcomes.
+               </p>
+               <p class="lead">Alicia's qualifications:</p>
+                <ul>
+                    <li>Health Psychology BSc <i>(Hons)</i></li>
+                    <li>Health Psychology MSc <i>(with Distinction)</i></li>
+                    <li>Applied Psychology <i>(Childcare and Health)</i></li>
+                    <li>Health/Fitness Yoga Diploma</li>
+                    <li>Pilates Trainer <i>(Professional Level 3)</i></li>
+                    <li>O.A. Dip <i>(Pilates Professional Trainer)</i></li>
+                    <li>Diet and Nutrition Advisor <i>(Diploma)</i></li>
+                    <li>Rock Star Teacher Training</li>
+                </ul>
+
+                <p class="lead">Affliliations:</p>
+                <ul>
+                    <li>International Alliance of Holistic Therapists</li>
+                    <li>International Association of Neuro Linguistic Programming and Coaching</li>
+                </ul>
+
+           </ul>
+            </div>
+
+        </div><!--/.container-->
+    </section><!--/#about-->
+
+    <section id="services" >
+        <div class="container">
+           <div class="center wow fadeInDown">
+                <h2>Services</h2>
+               <p class="lead">Psychological Therapy</p>
+               <p class="lead">Wellness Therapy</p>
+               <p class="lead"><a href="{% url 'website:clinics' %}">Performance Clinics</a></p>
+               <ul>
+                    <li>Golf</li>
+                    <li>Running</li>
+                   <li>Weight Training/Power Lifting</li>
+                   <li>Aerialists</li>
+                   <li>Injury Prevention/Recovery</li>
+                   <li>Active Fexibility </li>
+                </ul>
+               <p class="lead">Food and You</p>
+            </div>
+
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+    <section id="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <a href="#"><i class="fa fa-phone"></i></a>
+                        </div>
+                        <div class="media-body">
+                            <h2>Contact</h2>
+                            <p>For more information or to make an appointment, please email <a href="mailto:aliciaskeystherapies@outlook.com" target="_blank">aliciaskeystherapies@outlook.com</a> or use the contact form <a  href="{% url 'website:contact' %}">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->    
+    </section><!--/#contact-info-->
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <section>
+    <div class="container">
+
+		<div class="center">
+               <h1>Contact</h1>
+            </div>
+            <p class="lead">For enquiries or questions, please use the contact form below:</p>
+
+        <div class="row">
+
+                <div class="panel panel-booking">
+                    {% include 'website/contact_form_detail.html' %}
+                </div>
+            <div>
+                <p>You can also email directly to <a href="aliciaskeystherapies@outlook.com" target="_blank">
+				aliciaskeystherapies@outlook.com</a> or call on 07401 321900.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock content %}
