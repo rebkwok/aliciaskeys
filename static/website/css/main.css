@@ -26,38 +26,45 @@ h6 {
 
 h1{
   font-size: 36px;
-  color:#009966;
-  font-family: Harrington;
+  color:#DC0B8B;
+  font-family: serif;
 }
 
 h2{
   font-size: 24px;
-  color: #592f93;
-  font-family: Harrington;
+  color: #DC0B8B;
+  font-family: serif;
 }
 
 h3{
   font-size: 18px;
-  color: #787878;
+  color: #DC0B8B;
   font-weight: 400;
   line-height: 24px;
-  font-family: Harrington;
+  font-family: serif;
 }
 
 h4{
   font-size: 16px;
 }
 
+section {
+  padding-top: 20px;
+}
+
 a {
-  color: #009966;
+  color: #DC0B8B;
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
   transition:  color 300ms, background-color 300ms;
 }
 
-a:hover, a:focus {
-  color: #d43133;
+a:hover,
+a:focus {
+  color: #FDC109;
+  text-decoration: none;
+  outline: none;
 }
 
 hr {
@@ -66,7 +73,7 @@ hr {
 }
 
 .btn-fb-success {
-    background-color: #009966;
+    background-color: #DC0B8B;
     color: #fff;
 }
 
@@ -75,26 +82,19 @@ hr {
 }
 
 .btn-fb-success-minor {
-    border: 1px solid #009966;
+    border: 1px solid #FDC109;
     background-color: rgba(255, 255, 255, 0.6);
-    color: #009966;
+    color: #DC0B8B;
 }
 
 .btn-fb-success-minor:hover {
-  border: 1px solid #05AAB0;
-  color: #05AAB0;
+  border: 1px solid #FDC109;
+  color: #FDC109;
 }
 
 .btn-fb-success-minor-sm {
 	line-height: 1;
 	font-size: 90%;
-}
-
-a:hover,
-a:focus {
-  color: #592f93;
-  text-decoration: none;
-  outline: none;
 }
 
 .dropdown-menu {
@@ -199,12 +199,8 @@ div.banner-header {
   padding-bottom: 20px;
   margin-bottom: 20px;
   margin-top: -20px;
-  background-color: rgba(140, 198, 63, 0.7);
-  /*background-image: url(../images/bg_workshops1.jpg);*/
-  /*background-image:*/
-    /*linear-gradient(to right, rgba(5, 170, 176, 0.5), rgba(0, 153, 102, 0.5), rgba(57, 181, 74, 0.5), rgba(140, 198, 63, 0.5)),*/
-    /*url(../images/bg_workshops.jpg);*/
-  background-image: linear-gradient(to right, rgba(3, 164, 94, 0.8), rgba(83, 208, 212, 0.8));
+  background-color: #DC0B8B;
+  /*background-image: linear-gradient(to right, rgba(3, 164, 94, 0.8), rgba(83, 208, 212, 0.8));*/
   background-size: cover;
 }
 
@@ -212,8 +208,11 @@ div.banner-subheader {
   padding: 5px 0px;
   margin-bottom: 20px;
   margin-top: 0px;
-  background-color: rgba(140, 198, 63, 0.7);
-  background-image: linear-gradient(to right, rgba(165, 222, 252, 1), rgba(97, 95, 147, 1));
+    background-color: #DC0B8B;
+    background-image: linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: -webkit-linear-gradient(left, #FDC109, #DC0B8B);
+    background-image: -moz-linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: -o-linear-gradient(right, #FDC109, #DC0B8B);
   background-size: cover;
 }
 
@@ -292,7 +291,7 @@ header > .headerbox {
     /*background: -o-linear-gradient(right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); !* For Opera 11.1 to 12.0 *!*/
     /*background: -moz-linear-gradient(right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); !* For Firefox 3.6 to 15 *!*/
     /*background: linear-gradient(to right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); !* Standard syntax (must be last) *!*/
-    background-color: red;
+    background-color: #DC0B8B;
     background-image: linear-gradient(right, #FDC109, #DC0B8B);
     background-image: -webkit-linear-gradient(left, #FDC109, #DC0B8B);
     background-image: -moz-linear-gradient(right, #FDC109, #DC0B8B);
@@ -306,7 +305,6 @@ header > .headerbox {
 header > .headerbox .headerbox-inner {
       background: none;
 }
-
 
 .navbar>.container .navbar-brand{
   margin-left: 0;
@@ -325,7 +323,7 @@ header > .headerbox .headerbox-inner {
 
 .top-bar {
   padding: 10px 0;
-  background: #404040;
+  background: linear-gradient(to right, #FDC109, #FDC109 60%, #DC0B8B 90%);
   border-bottom: none;
   line-height: 20px;
 }
@@ -345,17 +343,17 @@ header > .headerbox .headerbox-inner {
 ul.social-share li {
   display: inline-block;
 }
-
+/*linear-gradient(to right, #FDC109, #FDC109 60%, #DC0B8B 90%);*/
 ul.social-share li a {
   display: inline-block;
-  color: #404040;
-  background: #009966;
+  color: #DC0B8B;
+  background: #FDC109;
   width: 20px;
   height: 20px;
   line-height: 20px;
   text-align: center;
   border-radius: 2px;
-  padding-top: 3px;
+  padding-top: 1px;
 }
 
 ul.social-share li a.non-icon {
@@ -491,37 +489,44 @@ ul.social-share li.dropdown ul li a {
 }
 
 .navbar-toggle {
-  background-color: #009966;
+  background-color: #DC0B8B;
   margin-top: 17px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #8cc63f;
+  background-color: #FDC109;
 }
+
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a.contact > div {
   padding: 0px 20px 0px;
   margin: 0;
   border-radius: 3px;
-  color: #000;
-  line-height: 70px;
+  color: #DC0B8B;
+  line-height: 10px;
   display: inline-block;
 }
 
+.navbar-default .navbar-nav > li > a.clinic {
+  line-height: 30px;
+    margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .navbar-default .navbar-nav > li > a.contact {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navbar-default .navbar-nav > li > a.contact > div {
-  background-color: #009966;
-  color: #fff;
+  background-color: #DC0B8B;
+  color: #FDC109;
   line-height: 30px;
 }
 
 
 .navbar-default .navbar-nav > li > a:hover{
-  color: #009966;
-  border-bottom: solid 2px #e7e7e7;
+  color: #FDC109;
+  border-bottom: solid 2px #DC0B8B;
   border-radius: 0;
 }
 
@@ -623,7 +628,7 @@ ul.social-share li.dropdown ul li a {
 }
 
 #main-slider .carousel h1, #main-slider .carousel h2 {
-  color: #fff;
+  color: #FDC109;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -639,7 +644,7 @@ ul.social-share li.dropdown ul li a {
 
 #main-slider .carousel .btn-slide {
   padding: 8px 40px;
-  background: #009966;
+  background: #DC0B8B;
   color: #fff;
   border-radius: 4px;
   margin-top: 0px;
@@ -652,7 +657,7 @@ ul.social-share li.dropdown ul li a {
 }
 
 #main-slider .carousel .item.carousel1 {
-  background-image: url(../images/slider/main_banner_bridge.jpg);
+  background-image: url(../images/slider/key-slider1.jpeg);
 }
 
 #main-slider .carousel .carousel-border {
@@ -671,10 +676,10 @@ ul.social-share li.dropdown ul li a {
   border-image-width: 8px;
 }
 #main-slider .carousel .item.carousel2 {
-  background-image: url(../images/slider/2a.jpg);
+  background-image: url(../images/slider/key-slider2.jpeg);
 }
 #main-slider .carousel .item.carousel3 {
-  background-image: url(../images/slider/3a.jpg);
+  background-image: url(../images/slider/key-slider3.jpeg);
 }
 
 #main-slider .carousel .item {
@@ -713,8 +718,8 @@ ul.social-share li.dropdown ul li a {
   position: absolute;
   top: 50%;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #009966;
-  border: 1px solid #009966;
+  color: #FDC109;
+  border: 1px solid #FDC109;
   display: inline-block;
   margin-top: -25px;
   height: 30px;
@@ -723,14 +728,13 @@ ul.social-share li.dropdown ul li a {
   text-align: center;
   border-radius: 4px;
   z-index: 5;
-  padding-top: 9px;
 }
 
 #main-slider .prev:hover,
 #main-slider .next:hover {
-  border: 1px solid #05AAB0;
+  border: 1px solid #DC0B8B;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #05AAB0;
+  color: #DC0B8B;
 }
 
 #main-slider .prev {
@@ -747,6 +751,7 @@ ul.social-share li.dropdown ul li a {
 
 #main-slider .carousel-indicators li {
   background-color: #fff;
+  border: 1px solid #FDC109;
 }
 
 #main-slider .carousel-indicators li:after {
@@ -755,13 +760,13 @@ ul.social-share li.dropdown ul li a {
 }
 
 #main-slider .carousel-indicators .active{
-  background-color: #009966;
-   border: 1px solid #009966;
+  background-color: #FDC109;
+   border: 1px solid #FDC109;
 }
 
 #main-slider .carousel-indicators .active:after {
-  background: #009966;
-  border: 1px solid #009966;
+  background: #FDC109;
+  border: 1px solid #FDC109;
 }
 
 #main-slider .active .animation.animated-item-1 {
@@ -823,11 +828,11 @@ ul.social-share li.dropdown ul li a {
   width: 85px;
   margin: auto;
   text-align:center;
-  background: #009966; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #8cc63f, #39b54a , #22b573, #00a99d, #29abe2); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #8cc63f, #39b54a , #22b573, #00a99d, #29abe2); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #8cc63f, #39b54a , #22b573, #00a99d, #29abe2); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #8cc63f, #39b54a , #22b573, #00a99d, #29abe2); /* Standard syntax (must be last) */
+  background-color: #DC0B8B;
+    background-image: -webkit-linear-gradient(left, #FDC109, #DC0B8B);
+    background-image: -moz-linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: -o-linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: linear-gradient(right, #FDC109, #DC0B8B);
   border-radius: 100%;
 
 }
@@ -840,7 +845,7 @@ ul.social-share li.dropdown ul li a {
   border-radius: 100%;
   line-height: 80px;
   text-align:center;
-  color: #009966;
+  color: #DC0B8B;
   border: 5px solid transparent;
   box-shadow: inset 0 0 0 50px #f2f2f2;
   -webkit-box-shadow: inset 0 0 0 50px #f2f2f2;
@@ -852,39 +857,35 @@ ul.social-share li.dropdown ul li a {
 }
 
 .feature-wrap i:hover {
-  background: #009966;
+  background: #DC0B8B;
   color: #fff;
-  box-shadow: inset 0 0 0 5px #009966;
-  -webkit-box-shadow: inset 0 0 0 5px #009966;
-  border: 3px solid #009966;
+  box-shadow: inset 0 0 0 5px #DC0B8B;
+  -webkit-box-shadow: inset 0 0 0 5px #DC0B8B;
+  border: 3px solid #DC0B8B;
 }
 
 .feature-wrap i img.yogaicon {
-  height: 70%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #services {
-  background-color: rgba(140, 198, 63, 0.5);
-  background-image: url(../images/bg_workshops1.jpg);
-  background-image:
-    linear-gradient(to right, rgba(5, 170, 176, 0.5), rgba(0, 153, 102, 0.5), rgba(57, 181, 74, 0.5), rgba(140, 198, 63, 0.5)),
-    url(../images/bg_workshops.jpg);
+  background-image: url(../images/keys-bg.jpg);
   background-size: cover;
 }
 
 #services .lead,
 #services h2,
 #services a {
-  color: #fff;
+  color: #DC0B8B;
 }
 
 #services h3 {
-  font-family: Harrington;
+  font-family: serif;
+  color: #fff;
 }
 
 #services a:hover {
@@ -892,33 +893,38 @@ ul.social-share li.dropdown ul li a {
 }
 
 .services-wrap {
-  padding: 40px;
+  padding: 20px;
   background: #fff;
   border-radius: 4px;
   margin-bottom: 20px;
 }
 
-.services-wrap:hover {
-    background:  rgba(41, 171, 226, 0.4);
+/*.services-wrap:hover {*/
+    /*background:  rgba(253,193,9,0.4);*/
 
-}
+/*}*/
 
 .services-wrap h3 {
   font-size: 20px;
   margin: 10px 0;
-  color: #009966;
+  color: #DC0B8B;
 }
 
 .services-wrap p {
-  color: #009966;
+  color: #DC0B8B;
 }
 
-.services-wrap:hover h3, .services-wrap:hover p {
-  color: #fff;
-}
+/*.services-wrap:hover h3, .services-wrap:hover p {*/
+  /*color: #fff;*/
+/*}*/
 
 .services-wrap .pull-left {
   margin-right: 20px;
+}
+
+ul.services-list {
+  list-style: none;
+  color: #fff;
 }
 
 #middle {
@@ -1104,11 +1110,11 @@ a:hover > .label-testimonial {
 }
 
 .fa.fa-phone {
-  background-color: #592f93;
+  background-color: rgba(253,193,9);
 }
 
 .fa.fa-phone:hover {
-  background-color: #009966;
+  background-color:  rgb(220,11,139);
 }
 
 
@@ -1876,12 +1882,11 @@ ul.sidebar-gallery {
 
 #footer > .footerbox {
   border-top: 4px solid transparent;
-    background: #009966; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #592f93, #0465b2 , #05aab0, #009966, #39b54a, #8cc63f); /* Standard syntax (must be last) */
-
+    background-color: #DC0B8B;
+    background-image: linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: -webkit-linear-gradient(left, #FDC109, #DC0B8B);
+    background-image: -moz-linear-gradient(right, #FDC109, #DC0B8B);
+    background-image: -o-linear-gradient(right, #FDC109, #DC0B8B);
 }
 
 #footer > .footerbox .footerbox-inner {
@@ -1892,11 +1897,11 @@ ul.sidebar-gallery {
 }
 
 #footer a {
-  color: #2e2e2e;
+  color: #DC0B8B;
 }
 
 #footer a:hover {
-  color: #009966;
+  color: #FDC109;
 }
 
 #footer ul {

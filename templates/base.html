@@ -23,14 +23,9 @@
         <link rel="shortcut icon" href="{% static 'website/images/favicon.ico' %}" type="image/vnd.microsoft.icon">
         <link rel="icon" type="image/png" href="{% static 'website/images/icon.png' %}">
 
-        <!--&lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
-        <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        &lt;!&ndash; Bootstrap theme &ndash;&gt;-->
-       <!--&lt;!&ndash; Font awesome &ndash;&gt;-->
-        <!--<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>-->
-
 	<!-- core CSS -->
     <link href="{% static 'website/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'website/css/font-awesome.min.css' %}"rel="stylesheet">
+    <link href="{% static 'website/css/fontawesome-all.min.css' %}"rel="stylesheet">
     <link href="{% static 'website/css/animate.min.css' %}"rel="stylesheet">
     <link href="{% static 'website/css/main.css' %}"rel="stylesheet">
     <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
@@ -41,7 +36,7 @@
 </head><!--/head-->
 
 <body {% block bodyclass %}{% endblock %}>
-
+<div class="wrap">
     <header id="header">
         <div class="headerbox">
         <div class="headerbox-inner">
@@ -50,9 +45,9 @@
                     <div class="col-xs-12">
                        <div class="social">
                             <ul class="social-share">
-                                <li><a href="https://www.facebook.com/flexibeast"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/FlexiBeast247"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/flexibeast/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/AliciasKeysUK/"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/aliciaskeysto"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/aliciaskeystofreedom/"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                        </div>
                     </div>
@@ -68,20 +63,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand pull-left" href="{% url 'website:home' %}">
-                        <img class='logo-unicorn' src="{% static 'website/images/site_logo.png' %}" alt="logo">
-                    </a>
+                    <!--<a class="navbar-brand pull-left" href="{% url 'website:home' %}">-->
+                        <!--<img class='logo-unicorn' src="{% static 'website/images/logo.jpg' %}" alt="logo">-->
+                    <!--</a>-->
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="{% url 'website:clinics' %}">Performance Clinics</a></li>
+                        <li><a class='clinic' href="{% url 'website:home' %}">Home</a></li>
+                        <li><a class='clinic' href="{% url 'website:home' %}#about">About</a></li>
+                        <li><a class='clinic' href="{% url 'website:home' %}#locations">Locations</a></li>
+                        <li><a class='clinic' href="{% url 'website:home' %}#services">Services</a></li>
+                        <li><a class='clinic' href="{% url 'website:clinics' %}">Performance Clinics</a></li>
                         <li><a class='contact' href="{% url 'website:contact' %}"><div>Contact</div></a></li>
                         <span class="visible-xs">
                             <ul class="social-share pull-right">
-                            <li><a href="https://www.facebook.com/alicia.knight.7311?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/FlexiBeast247"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/flexibeast/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/AliciasKeysUK/"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/aliciaskeysto"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/aliciaskeystofreedom/"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </span>
                 </ul>
@@ -116,8 +115,9 @@
     {% block content %}
     {% endblock %}
 
+</div>
 
-        <footer id="footer" class="midnight-blue">
+        <footer id="footer" class="footer midnight-blue">
         <div class="footerbox">
         <div class="footerbox-inner">
         <div class="container">
