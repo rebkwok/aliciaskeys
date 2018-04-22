@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load cookielaw_tags %}
 
 <!DOCTYPE html>
 <html lang="en-gb">
@@ -91,6 +92,8 @@
     </div>
     </header><!--/header-->
 
+    {% cookielaw_banner %}
+
     {% block messages %}
     {% if messages %}
           <div class="row">
@@ -158,6 +161,7 @@
     <script src="{% static 'website/js/main.js' %}"></script>
 {#    <script src="{% static 'website/js/isotopeRowsCentered.js' %}"></script>#}
     <script src="{% static 'website/js/wow.min.js' %}"></script>
+        <script src="{% static 'cookielaw/js/cookielaw.js' %}"></script>
     <!--[if lt IE 9]>
     <script src="{% static 'website/js/html5shiv.js"></script' %}">
     <script src="{% static 'website/js/respond.min.js"></script' %}">

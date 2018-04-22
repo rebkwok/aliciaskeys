@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'cookielaw',
     'django_extensions',
     'debug_toolbar',
     'website'
