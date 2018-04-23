@@ -65,8 +65,10 @@ def process_contact_form(request):
         request.session['first_name'] = first_name
         request.session['last_name'] = last_name
         request.session['email_address'] = email_address
+        # required field, so must be True if form valid
+        request.session['data_privacy_accepted'] = True
 
-        return HttpResponseRedirect(reverse('contact'))
+        return HttpResponseRedirect(reverse('website:contact'))
 
     else:
         messages.error(
@@ -86,10 +88,12 @@ def contact(request, template_name='website/contact.html'):
     first_name = request.session.get('first_name', '')
     last_name = request.session.get('last_name', '')
     email_address = request.session.get('email_address', '')
+    data_privacy_accepted = request.session.get('data_privacy_accepted', False)
 
     form = ContactForm(initial={
         'first_name': first_name, 'last_name': last_name,
         'email_address': email_address, 'subject': subject,
+        'data_privacy_accepted': data_privacy_accepted
     })
 
     return TemplateResponse(
